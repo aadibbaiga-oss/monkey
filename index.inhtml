@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monkey World 🐒</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #eaffea;
+            color: #23452b;
+            text-align: center;
+        }
+
+        header {
+            background: #176b35;
+            color: white;
+            padding: 25px;
+        }
+
+        h1 {
+            font-size: 38px;
+        }
+
+        .container {
+            padding: 25px;
+        }
+
+        .card {
+            background: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 700px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #aaa;
+        }
+
+        img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+        }
+
+        button {
+            background: #176b35;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0b4520;
+        }
+
+        footer {
+            background: #176b35;
+            color: white;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>🐒 Monkey World 🐒</h1>
+    <p>बंदरों की अद्भुत दुनिया में आपका स्वागत है!</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>बंदर क्या है?</h2>
+        <img src="https://images.unsplash.com/photo-1540573133985-87b6da6d54a9"
+             alt="Monkey">
+        <p>
+            बंदर एक बुद्धिमान और सामाजिक प्राणी है।
+            यह पेड़ों पर चढ़ सकता है और कई प्रकार के
+            फल, पत्तियां और बीज खाता है।
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>बंदर की विशेषताएं</h2>
+        <p>1. बंदर बहुत फुर्तीले होते हैं।</p>
+        <p>2. ये पेड़ों पर चढ़ सकते हैं।</p>
+        <p>3. इनकी कई प्रजातियां होती हैं।</p>
+        <p>4. ये समूह में रहना पसंद करते हैं।</p>
+        <p>5. ये अलग-अलग आवाजें निकालते हैं।</p>
+    </div>
+
+    <div class="card">
+        <h2>बंदर क्या खाते हैं?</h2>
+        <p>🍌 केला</p>
+        <p>🍎 फल</p>
+        <p>🌿 पत्तियां</p>
+        <p>🌰 बीज और मेवे</p>
+    </div>
+
+    <div class="card">
+        <h2>मजेदार तथ्य</h2>
+        <p id="fact">बंदरों के बारे में रोचक तथ्य जानें!</p>
+        <button onclick="showFact()">
+            नया तथ्य दिखाओ
+        </button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Monkey World | Educational Website</p>
+</footer>
+
+<script>
+    const facts = [
+        "कुछ बंदर पेड़ों पर बहुत अच्छी तरह चढ़ते हैं।",
+        "कैपुचिन बंदर औजारों का उपयोग कर सकते हैं।",
+        "बंदर सामाजिक समूहों में रहते हैं।",
+        "कुछ बंदरों की पूंछ बहुत लंबी होती है।",
+        "दुनिया में बंदरों की कई प्रजातियां हैं।"
+    ];
+
+    function showFact() {
+        let random = Math.floor(Math.random() * facts.length);
+        document.getElementById("fact").innerText = facts[random];
+    }
+</script>
+
+</body>
+</html>
